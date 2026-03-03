@@ -567,31 +567,36 @@
               />
             </div>
           </div>
-          <label class="modal-area"
-            >Comment<textarea
-              class="input-comment"
-              name="user-comment"
-              placeholder="Text input"
-              maxlength="200"
-              id="comment"
-              required
-            ></textarea>
-          </label>
-          <label class="modal-label-check"
-            ><input
-              class="input-policy"
+          <div class="input-box">
+            <label class="modal-area"
+              >Comment<textarea
+                class="input-comment"
+                name="user-comment"
+                placeholder="Text input"
+                maxlength="200"
+                id="comment"
+                required
+              ></textarea>
+            </label>
+          </div>
+          <div class="input-checkbox">
+            <input
+              class="input-policy visually-hidden"
               type="checkbox"
-              name="checkbox-police"
+              value="true"
+              name="user-privacy"
+              id="user-privacy"
               required
             />
-            <div class="custom-checkbox">
-              <svg class="check-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-            </div>
-            I accept the terms and conditions of the &nbsp;
-            <a class="link-police" href="#"> Privacy Policy</a></label
-          >
+            <label class="modal-label-check" for="user-privacy"
+              ><span class="custom-checkbox">
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a class="link-police" href="#">Privacy Policy</a></label
+            >
+          </div>
           <button class="send-form-btn" type="submit">Send</button>
         </form>
       </div>

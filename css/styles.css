@@ -776,11 +776,29 @@ address {
 
 /* CHECKBOX */
 
-.input-policy {
+/* контейнер */
+.input-checkbox {
+    margin-bottom: 24px;
+}
+
+/* ховаємо реальний чекбокс */
+.visually-hidden {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
+
+/* сам label */
+.modal-label-check {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.4;
+    cursor: pointer;
+    color: #2e2f42;
+}
+
+/* квадрат */
 .custom-checkbox {
     width: 16px;
     height: 16px;
@@ -790,21 +808,37 @@ address {
     align-items: center;
     justify-content: center;
     margin-right: 8px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* галочка */
 .check-icon {
-    fill: white;
-    transform: scale(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #f4f4fd;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-policy:checked+.custom-checkbox {
-    background: #4d5ae5;
+
+/* стан checked */
+.input-policy:checked+.modal-label-check .custom-checkbox {
+    background-color: #404bbf;
+    border-color: #404bbf;
+}
+
+.input-policy:checked+.modal-label-check .check-icon {
+    opacity: 1;
+}
+
+/* hover ефект */
+.input-policy+.modal-label-check:hover .custom-checkbox {
     border-color: #4d5ae5;
 }
 
-.input-policy:checked+.custom-checkbox .check-icon {
-    transform: scale(1);
+/* фокус (важливо для доступності) */
+.input-policy:focus+.modal-label-check .custom-checkbox {
+    outline: 2px solid #4d5ae5;
+    outline-offset: 2px;
 }
 /* BUTTON */
 
