@@ -480,16 +480,20 @@
             </li>
           </ul>
         </div>
-        <form action="#" class="subscribe-form">
+        <div class="form-subs-box">
           <p class="form-text">Subscribe</p>
-          <div class="subs-box">
-            <label class="visually-hidden" for="telegram-id"></label>
-            <input class="subs-telegram-input" id="telegram-id" type="email" name="user-subscribe" maxlength="254" placeholder="E-mail" required>
+          <form action="#" class="subscribe-form">
+            
+            <label class="label-telegram" for="telegram-id">
+              <input class="subs-telegram-input" id="telegram-id" type="email" name="user-subscribe" maxlength="254" placeholder="E-mail" required>
+            </label>
+            
             <button class="subs-telegram-btn" type="submit">Subscribe<svg class="subsribe-icon">
               <use href="./images/icons.svg#icon-telegram"></use>
             </svg></button>
-          </div>
-        </form>
+            
+          </form>
+        </div>
       </div>
     </footer>
     <div class="modal-overlay">
