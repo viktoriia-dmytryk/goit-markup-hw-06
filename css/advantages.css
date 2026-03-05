@@ -1,0 +1,59 @@
+/* =========================
+   ADVANTAGES
+========================= */
+
+.sect-advant {
+    padding: 120px 0;
+}
+
+.sect-advant .container {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.advant-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 1128px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.advant-info {
+    flex: 1 1 264px;
+}
+
+.adv-title-name {
+    font-weight: 500;
+    font-size: 20px;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.adv-title-text {
+    color: #434455;
+}
+
+.adv-icon-container {
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.icon {
+    height: 64px;
+    width: 64px;
+}
