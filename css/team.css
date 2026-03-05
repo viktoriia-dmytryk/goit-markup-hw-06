@@ -4,42 +4,54 @@
 
 .team-page {
     background-color: #f4f4fd;
-    padding: 120px 0;
     text-align: center;
 }
 
-.team-page-title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-transform: capitalize;
-    color: #2e2f42;
-    margin-bottom: 72px;
-}
+
 
 .team-title-photo {
     width: 100%;
     object-fit: cover;
+    height: auto;
 }
 
 .team-ul {
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
     justify-content: center;
+
+    @media screen and (width >= 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+        justify-content: center;
+    }
+    
+    @media screen and (width >= 1158px) {
+      flex-wrap: nowrap;
+    }
 }
 
 .teammate {
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
-    width: 264px;
+    
     box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
         0 1px 1px rgba(46, 47, 66, 0.16),
         0 1px 6px rgba(46, 47, 66, 0.08);
     text-align: center;
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    @media screen and (width >= 768px) {
+        flex-basis: ((100% - 24px) / 2);
+    }
+    
+    @media screen and (width >= 1158px) {
+        flex-basis: ((100% - 72px) / 4);
+    }
+    
 }
 
-.teammate-text {
+.teammate-text-box {
     padding: 32px 0 32px;
 
 }
@@ -47,20 +59,29 @@
 .team-title-name {
     font-weight: 500;
     font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
+
     margin-bottom: 8px;
     text-align: center;
 }
 
 .team-title-text {
-    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
     text-align: center;
+    color: #434455;
     margin-bottom: 8px;
 }
 
 .team-icon-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
     margin-top: 8px;
 }

@@ -1,0 +1,17 @@
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+.section {
+
+    padding: 96px 0;
+
+    @media screen and (width >=1158px) {
+        padding: 120px 0;
+    }
+
+}
