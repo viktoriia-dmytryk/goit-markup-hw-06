@@ -5,27 +5,64 @@
 
 .foot-page {
     background-color: #2e2f42;
-    padding: 100px 0;
+    padding: 96px 0;
+   
+    @media screen and (width >= 1158px) {
+        padding: 100px 0;
+    }
+    
 }
 
-.foot-page .container {
-    max-width: 1158px;
-    margin: 0 auto;
+
+.container.footer-container {
     display: flex;
-    align-items: baseline;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
 
+    @media screen and (width >= 768px) and (width <= 1157px){
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 72px 24px;
+        flex-wrap: wrap;
+        align-items: baseline;
+        padding-left: 108px;
+        
+    }
+    
+    @media screen and (width >= 1158px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 0;
+        display: flex;
+    }
+}
 .foot-container-copy {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-right: 120px;
+    max-width: 288px;
+    align-items: center;
+    @media screen and (width >= 768px) {
+        max-width: 264px;
+        align-items: flex-start;
+    }
+
+    @media screen and (width >= 1158px) {
+        margin-right: 120px;
+    }
 }
 
 .foot-text {
-    max-width: 264px;
-    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
     color: #f4f4fd;
+
+    
 }
 
 .foot-container-link {
@@ -39,21 +76,54 @@
 }
 
 .foot-text-social {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
     margin-bottom: 16px;
+
+    @media screen and (width >= 768px) {
+      text-align: left;
+    }
+    
 }
 
 
 /* TELEGRAM-FORM */
 .form-subs-box {
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (width >= 768px) {
+      align-items: flex-start;
+    }
+    
+    @media screen and (width >= 1158px) {
+        margin-left: 80px;
+    }
+    
 
 }
 
 .subscribe-form {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    @media screen and (width >= 768px) {
+      flex-direction: row;
+      gap: 24px;
+    }
+    
+    @media screen and (width >= 1158px) {
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
 }
 
 .form-text {
