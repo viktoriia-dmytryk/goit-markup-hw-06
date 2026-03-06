@@ -142,7 +142,7 @@
     border: 1px solid #fff;
     border-radius: 4px;
     height: 40px;
-    width: 264px;
+    width: 288px;
     font-weight: 400;
     font-size: 12px;
     padding: 8px 16px;
@@ -152,6 +152,11 @@
     background-color: transparent;
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+    @media screen and (width >= 768px) {
+        width: 264px;
+    }
 }
 
 .subs-telegram-input:hover,
