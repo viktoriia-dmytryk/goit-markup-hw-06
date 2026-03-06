@@ -14,7 +14,7 @@
 }
 
 
-.container.footer-container {
+.footer-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,11 +32,12 @@
     }
     
     @media screen and (width >= 1158px) {
+        display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        align-items: baseline;
         flex-wrap: nowrap;
         gap: 0;
-        display: flex;
+ 
     }
 }
 .foot-container-copy {
@@ -103,7 +104,7 @@
     }
     
     @media screen and (width >= 1158px) {
-        margin-left: 80px;
+        margin-left: auto;
     }
     
 
