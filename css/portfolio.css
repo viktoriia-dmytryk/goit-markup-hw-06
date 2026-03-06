@@ -11,13 +11,13 @@
     @media screen and (width >= 768px) {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px 24px;
+        gap: 72px 24px;
         
     }
     
     @media screen and (width >= 1158px) {
         row-gap: 48px;
-        column-gap: 24px;
+        column-gap: 40px 24px;
         justify-content: center;
         max-width: 1128px;
     }
