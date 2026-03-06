@@ -20,7 +20,9 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.no-scroll {
+    overflow: hidden;
+}
 main {
     flex-grow: 1;
 }
